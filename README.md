@@ -43,7 +43,7 @@ To resolve issues with `apiVersions` during template generation, use the followi
 helm install trivy-operator aqua/trivy-operator -f trivy-custom-value.yaml --dry-run --debug > trivy-operator.yaml
 ```
 
-Copy the `ServiceMonitor` section from the generated `trivy-operator.yaml` file and create a `servicemonitor.yaml` file in the `monitor` directory. Deploy it through Flux CD by pushing the changes to Git.
+Copy the `ServiceMonitor` section from the generated `trivy-operator.yaml` file and create a `servicemonitor.yaml` file in the `monitor` directory.
 
 ### References
 
