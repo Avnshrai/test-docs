@@ -17,7 +17,7 @@ helm repo add aqua https://aquasecurity.github.io/helm-charts/
 helm template trivy-operator aqua/trivy-operator -f trivy-custom-value.yaml --output-dir="./"
 ```
 
-After generating the template, rename the folder from `zitadel` (release name) to `helm-template` and move all templates into it.
+After generating the template, rename the folder from `trivy-operator` (release name) to `helm-template` and move all templates into it.
 
 #### Enabling Service Monitor
 
